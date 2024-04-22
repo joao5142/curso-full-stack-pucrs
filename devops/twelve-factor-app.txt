@@ -1,0 +1,22 @@
+Core:
+
+Utilizar formatos declarativos e configurar ambientes  para facilitar automação
+Garantir portabilidade entre ambientes
+Compatibilidade com plataforma em nuvens
+Minizar impacto de migração entre ambientes de desenvolvimento e produção
+Ser escalavel sem alteraçoes significativas
+
+Twelve factor apps
+
+01- Base de código (codebase) (development,homologação,produção)
+02- Dependências (gerenciadores de pacotes)
+03- Config (armazenamento de configuraçoes de ambiente)
+04- Backing services (tratar serviços como recursos,abstrair as tecnologias e não acomplar diretamente ao código)
+05- Build, release,run (separar os estágios de build)
+06- Processos (executar a aplicação como um ou mais processos)
+07- Port binding (algum serviço de redirecionamento de portas da aplicação)
+08- Concorrência (Escalar através de um modelo, escalabilidade horizontal|vertical)
+09- Descartabilidade (Processos com rápida inicialização e encerramento)
+10- Paridade entre desenvolvimento e produção(minimizar a diferença entre dev e produção)
+11- Logs (Tratar logs como fluxos de eventos e de forma centralizada(alguma tecnologia))
+12- Processos administrativos (Rodar tarefas de administração/gestão em processos pontuais)

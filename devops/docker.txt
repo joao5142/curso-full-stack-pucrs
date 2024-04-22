@@ -1,0 +1,28 @@
+docker container run
+docker container run -rm --name meucontainer (assim que finalizar ele exclui)
+docker container ls ('-a' para mostrar os containers inativos)
+docker container run -it ubuntu (executa instruções dentro do container)
+docker container rm (id do container ou nome)
+docker container run -d nginx (roda por debaixo dos panos)
+docker container run -d -p 8080:80 nginx ( roda por debaixo dos panos  e realiza o port binding)
+
+docker container run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongouser -e MONGO_INITDB_ROOT_PASSWORD=mongopwd mongo (baixando a imagem do 
+mongo e setando variaveis  de ambiente)
+
+docker build -t aula-ubuntu-curl  .  (cria uma imagem a partir do dockerfile especifico do projeto)
+
+Toda imagem é recomendado ter o namespace/repositorio:tag(versão)
+
+docker image prune (remove as imagens não utilizadas)
+
+
+
+
+SUBIR IMAGEM PARA O REPOSITORIO DOCKER HUB
+
+docker login (caso não esteja logado)
+docker push joaop5142/treinutri:v1
+
+
+
+.dockerignore (funciona como o gitignore)
